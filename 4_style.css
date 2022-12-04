@@ -1,0 +1,111 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans&display=swap');
+
+
+/* Hele siden */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+/* Navigasjonsbar */
+.navbar {
+    display: flex;
+    margin: right auto;
+    float: right;
+    }
+
+    /* Plasserer navigasjonsbaren */
+    .navbar nav {
+        display: block;
+        padding-right: 12px;
+    }
+    
+
+    /* Styling av knappene i navigasjonsbaren */
+    .navbar a {
+        color: black;
+        font-size: 0.9rem;
+        font-weight: bold; 
+        text-decoration: none;
+        line-height: 60px;
+        padding: 0.4em 0.9em;
+        border: 2px solid;
+        border-color: black;
+        border-radius: 20px;
+        margin: 9px;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    /* Styler mouseover på navigasjonsbaren */
+    .navbar a:hover {
+        color:black;
+        background: rgb(177, 108, 77);
+        border-color: black;
+        
+    }
+
+    /* Container for resten av siden (navbar ekskludert) */
+.container {
+    width: 100%;
+    height: 90%;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Plassering av overskrift */
+#header{
+    text-align: center;
+    color: black;
+    text-decoration:underline dotted;
+}
+
+/* Plassering og styling av tekst */
+.container #text {
+margin-top: 30px;
+margin-bottom: auto;
+    text-align: left;
+    font-size: medium;
+}
+
+/* Bakgrunnsfarge */
+.access{
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.40242034313725494) 30%, rgba(147,147,147,1) 100%);
+    color: black;
+}
+
+/* Bildene i rad en & to */
+.column {
+    float: left;
+    width: 50%;
+    padding: 7px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  } 
+  /* Sørger for at bildene er under hverandre på mobil */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }

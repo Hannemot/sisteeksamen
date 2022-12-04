@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&display=swap');
+
+
+/* Hele siden */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+/* -----------------------------------------------------HEADER SECTION----------------------------------------------------------- */ 
+
+/* Plasserer navigasjonsbaren */
+.navbar nav {
+  display: block;
+  padding-right: 12px;
+  flex-direction: column;
+  text-align: right;
+}
+
+
+/* Styling av knappene i navigasjonsbaren */
+.navbar a {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: bold; 
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0.4em 0.9em;
+  border: 2px solid;
+  border-color: rgb(98, 43, 43);
+  border-radius: 20px;
+  margin: 9px;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: white;
+}
+
+
+/* Styler mouseover på navigasjonsbaren */
+.navbar a:hover {
+  color:black;
+  background: rgb(177, 108, 77);
+  border-color: black;
+}
+
+
+/* Plasserer headeren */
+.header{
+  position: relative;
+  text-align: center;
+}
+
+
+/* Plasserer bildet i headeren og legger til skygge over bildet */
+.header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  filter:brightness(50%); 
+}
+
+
+/* Plasserer og designer teksten på headeren */
+.header-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Open Sans';
+}
+
+/* Designer overskriften på header-teksten */
+.header-text h1 {
+    font-size: 3.8vw;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Designer teksten under overskriften på headeren */
+.header-text h2 {
+    font-size: 1.4vw;  
+}
+
+
+
+/* ------------------------------------------------ABOUT SECTION------------------------------------------- */ 
+
+/* Plasserer "om oss" seksjonen  */
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* Plasserer og styler overskriften på "om oss" seksjonen */
+.about h1 {
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+    font-size: 2vw;
+}
+
+
+/*Styler linje under overskrift*/
+.line {
+  border: 2px solid rgb(218, 183, 56);
+  background: rgb(218, 183, 56);
+  height: 2px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Styler paragrafen i teksten */
+.about p {
+  margin-top: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+ }
+
+
+/* Styler siste paragraf i "om oss" */
+.welcome {
+  font-weight: bold;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 1.2em;  
+}
+
+
+ /* Styler den trykkbare linken i "om oss" */
+.about a{
+  color: rgb(31, 64, 155);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Styler hovereffekten på alle linkene */
+  a:hover {
+  color: black;
+}
+
+
+
+/* -------------------------------------------PICTURE SECTION----------------------------------------------- */ 
+
+/* Plasserer bilderaden */
+.picturerow {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+/* Finjusterer posisjonen til bildene */
+.pictures {
+    width: 33,33%;
+    padding: 8px;
+}
+
+
+/* Plasserer og styler credits til bildene */
+.credit {
+  text-align: left;
+  font-size: 0.8rem;
+  color: rgba(109, 106, 106, 0.982);
+}
+
+
+/*Plasserer og styler linje under bildene*/
+.line2 {
+  border: 2px solid rgb(218, 183, 56);
+  background: rgb(218, 183, 56);
+  height: 2px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+
+/* ---------------------------------------------CONTACT SECTION------------------------------------------------------ */ 
+
+/* Plasserer og designer overskrift */
+.contact-section h1 {
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+
+/* Plasserer kontakt oss-elementene med ikoner */
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+
+/* Styler overskriften under ikonene */
+.contact h1 {
+  font-size: 2vw;
+  padding-bottom: 20px; 
+}
+
+
+/* Plasserer all tekst i midten */
+.contact {
+  text-align: center; 
+}
+
+
+/* Bestemmer bredden til ikonene */
+.house, .telephone, .mail {
+  width: 25%;
+}
+
+
+/* Styler de små ikonene til kontakt-seksjonen */
+.contact img {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  width: 40px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* Plasserer credit-linkene til ikonene */
+#ikoner {
+  font-size: 10px;
+  text-align: center;
+}
+
+
+
+/* ----------------------------------------RESERVATION------------------------------------------ */ 
+
+/* Styler og plasserer reservasjonsskjemaet  */
+.reservation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(18, 17, 12, 0.786);
+  background-size: cover;
+  box-shadow: 0 0 22px 0 rgb(153, 153, 153);
+}
+
+
+/* Styler og plasserer overskriften */
+.reservation h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 3%;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+
+/* Styler skjemaet */
+form {
+  margin: 50px;
+  text-align: center;
+  width: 40%;
+}
+
+
+/* Styler selve input-teksten */
+input, select {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* Styler overskriften til hver av boksene */
+label {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold; 
+}
+
+/* Styler og plasserer "annet" boksen */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* Styler og plasserer knappen */
+button {
+  border: none;
+  background-color: rgb(243, 234, 234);
+  color: rgb(63, 55, 55);
+  padding: 12px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+
+#button {
+  display: flex;
+  justify-content: center;  
+}
+
+
+/* Styler hover-effekten på knappen */
+.button:hover{
+  background-color: rgba(18, 17, 12, 0.368);
+  color: white;
+  transition-duration: 0.3s;
+}
+
+
+
+/* -----------------------------------------------OPENING HOURS---------------------------------------------------- */ 
+
+/* Styler og plasserer seksjonen til åpningstidene */
+.openingsection {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  margin-top: 1rem;
+  height: auto;
+}
+
+
+/* Styler og plasserer boksen */
+.openinghours {
+  padding-top: 40px;
+  outline: 2px dotted;
+  outline-offset: -20px;
+  height: 400px;
+  margin: auto;
+  background-color:  rgba(218, 183, 56, 0.648);
+  box-shadow: 0 0 22px 0 rgb(153, 153, 153);
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+
+/* Plasserer bildet/ikonet */
+.openinghours img {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+/* Styler og plasserer overskriften */
+.openinghours h1 {
+  font-size: 2rem;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  text-transform: uppercase;
+}
+
+
+/* Styler andre overskriften */
+.openinghours h2 {
+  font-size: 1.5rem;
+}
+
+
+/* Styler paragrafene */
+.openinghours p {
+  padding: 8px; 
+}
+
+
+/* Plasserer og styler credit til bildet/ikonet (klokke) */
+#clock {
+  text-align: center;
+  font-size: 10px;
+}
+
+
+
+
+
+/* Gjør så nettsiden ser OK ut på mindre skjermer */
+@media only screen and (max-width: 750px) {
+  
+  p {
+    font-size: 12px;
+  }
+
+  .credit p {
+    font-size: 8px;
+  }
+
+.navbar a {
+ font-size: 10px;
+ }
+
+.banner h1 {
+  font-size: 20px;
+}
+
+.banner p {
+  font-size: 10px;
+}
+
+.about h1 {
+  font-size: 15px;
+}
+
+.welcome {
+  font-size: 12px;
+}
+
+.about a {
+  font-size: 12px;
+}
+
+
+.contact p {
+  font-size: 12px;
+}
+
+.contact-section h1 {
+  font-size: 20px;
+}
+
+.contact h1 {
+  font-size: 15px;
+}
+
+.reservation h1{
+  font-size: 20px;
+}
+
+.reservation label, input {
+  font-size: 10px;
+}
+
+.button {
+  font-size: 10px;
+}
+
+.openinghours h1 {
+ font-size: 20px;
+}
+
+.openinghours h2 {
+  font-size: 15px;
+}
+
+.about p {
+width: 100%;
+margin: auto;
+padding: 0%;
+padding-top: 5%;
+  
+
+
+} 
+ 
+}

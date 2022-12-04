@@ -1,0 +1,135 @@
+
+/* ------------------------------------------ !!! WELCOME PAGE - FØRSTE SIDE !!! ------------------------------------- */
+/* STUDENTNUMMERENE TIL GRUPPA - 375093 , 375155 , 376870 , 375162 , 375113
+
+/* Importerer skrifttyper fra Google Fonts - disse benyttes på alle/andre sider og er ikke eksklusivt til velkommen-siden */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans&display=swap');
+
+/* Hele siden */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {     
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+/* Seksjon som skal inneholde alle tags og elementer */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)), url('./bilder/welcome.jpg') no-repeat center / cover ;
+    color: white;
+}
+
+/* Navigasjonsbar */
+.navbar {
+    display: flex;
+    margin: right auto;
+    float: right;
+    }
+
+/* Plasserer navigasjonsbaren */
+    .navbar nav {
+        display: block;
+        padding-right: 12px;
+    }
+    
+/* Styling av knappene i navigasjonsbaren */
+    .navbar a {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: bold; 
+        text-decoration: none;
+        line-height: 60px;
+        padding: 0.4em 0.9em;
+        border: 2px solid;
+        border-color: white;
+        border-radius: 20px;
+        margin: 9px;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+/* Styler mouseover på navigasjonsbaren */
+    .navbar a:hover {
+        color:black;
+        background: rgb(177, 108, 77);
+        border-color: black;
+        
+    }
+
+/* Container for resten av siden (navbar ekskludert) */
+.container {
+    width: 100%;
+    height: 90%;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Styling av første overskrift */
+.container .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Styling av andre overskrift */
+.container .hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling av informasjonsteksten */
+.container .hero-text p {
+    font-family: 'PT Sans';
+    font-size: 1.2rem;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-left: 0;
+}
+
+/* Styling av booking-knappen */
+.container .hero-text a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0.5em 1.2em;
+    margin-top: 1rem;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Får booking-knappen til å endre seg når du holder over den */
+.container .hero-text a:hover {
+    background: rgb(177, 108, 77);
+    color: black;
+}
+
+/* Kreditering av fotograf */
+.container .bilde-credit p {
+    opacity: 60%;
+    color: brown;
+    font-size: 1.0rem;
+    margin-top: 0.5rem;
+}
+
+/* Brukes for å lage siden responsiv på andre enheter */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+    
+}
